@@ -1,33 +1,34 @@
 <template>
   <div id="app">
     <header>
-      <dashboard />
+      <navigation />
     </header>
     <main>
-      <aside class="sidebar">
-        <navigation />
-      </aside>
       <div class="content">
+        <!-- <dashboard /> -->
         <upcomingLaunches />
+        <roadsterLocation />
+        <StepperVertical />
       </div>
     </main>
-    
-    
-    
   </div>
 </template>
 
 <script>
-import dashboard from './components/dashboard.vue'
+// import dashboard from './components/dashboard.vue' make this into a route view instead of component as this will be classed as more than a compjnent see for more structure info https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb
 import navigation from './components/navigation.vue'
 import upcomingLaunches from './components/upcomingLaunches.vue'
+import roadsterLocation from './components/roadsterLocation.vue'
+import StepperVertical from './components/historyTimeline.vue'
 
 export default {
   name: 'App',
   components: {
-    dashboard,
+    // dashboard,
     upcomingLaunches,
-    navigation
+    navigation,
+    roadsterLocation,
+    StepperVertical
   }
 }
 </script>
@@ -40,5 +41,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: grid;
+  
+}
+
+header {
+  
+}
+
+main {
+  
+  
 }
 </style>
