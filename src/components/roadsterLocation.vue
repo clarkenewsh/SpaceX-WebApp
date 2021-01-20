@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div id="roaster-locator" class="container">
         <h2>Roadster Locator</h2>
         <table class="table">
             <thead>
@@ -122,5 +122,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+#roadster-location {
+  border: 2px solid blue;
+  background: gray;
+  
+}
+
+
 
 </style>
